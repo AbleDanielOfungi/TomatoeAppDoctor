@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".guide1">
+
+    <Button
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/button1"
+        android:drawableLeft="@drawable/ic_baseline_directions_walk_24"
+        android:fontFamily="@font/quintessential_regular"
+        android:text="User Guide"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:paddingBottom="40dp"
+            android:src="@drawable/roundpic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/courgette_regular"
+            android:text="Click or tap on the imageView or photo to choose to load an image from gallery or capture using a camera"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/img"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/skipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/ubuntu_bold"
+                android:onClick="openMainActivity"
+                android:text="Skip"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/predict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/round_buttons"
+                android:fontFamily="@font/ubuntu_bold"
+                android:onClick="openguide2"
+                android:text="Next"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

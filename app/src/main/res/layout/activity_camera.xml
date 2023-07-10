@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Camera">
+
+     <ImageView
+        android:layout_width="200dp"
+        android:id="@+id/img"
+        android:layout_height="200dp"
+         android:src="@drawable/ic_baseline_photo_camera_24"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/img"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Exit"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Capture"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Predict"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/classified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quintessential_regular"
+        android:text="Classified As:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classified"
+        android:layout_marginTop="-14dp"
+        android:fontFamily="@font/quintessential_regular"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/confidencesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quintessential_regular"
+        android:text="Confidences:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/akayakanadaka_regular"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:id="@+id/confidence"
+        android:layout_below="@+id/confidencesText"
+        />
+
+    <TextView
+        android:id="@+id/lifeSpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confidence"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quintessential_regular"
+        android:text="Expected Life Span:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="#000"
+        android:fontFamily="@font/ptserif_regular"
+        android:id="@+id/display"
+        android:layout_below="@+id/lifeSpan"
+        />
+
+    <TextView
+        android:id="@+id/treatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quintessential_regular"
+        android:text="Possible Recommended Treatment:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/treatment"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/courgette_regular"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
