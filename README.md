@@ -3,4 +3,4 @@ The detects very many diseases, predicts the life span of the affected plant, re
 
 <p align="center">
  
-  <img src="https://github.com/AbleDanielOfungi/TomatoeAppDoctor/blob/main/camera.png" width="100" alt="accessibility text">
+  <img src="https://github.com/AbleDanielOfungi/TomatoeAppDoctor/blob/main/camera.png" width="150" alt="accessibility text">
